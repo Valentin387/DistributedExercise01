@@ -1,11 +1,16 @@
 import asyncio
 
 async def tarea1():
-    # realizar alguna operación
+    # Perform some operation
     await asyncio.sleep(1)
+    print("tarea1 completed")
 
 async def tarea2():
-    # realizar alguna operación
+    # Perform some operation
     await asyncio.sleep(2)
+    print("tarea2 completed")
 
-asyncio.run(asyncio.gather(tarea1(), tarea2()))
+async def main():
+    await asyncio.gather(tarea1(), tarea2())
+
+asyncio.run(main())

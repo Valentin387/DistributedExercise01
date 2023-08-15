@@ -1,12 +1,10 @@
 import multiprocessing
 
 def tarea1():
-    # realizar alguna operación
-    pass
+    print("Executing tarea1")
 
 def tarea2():
-    # realizar alguna operación
-    pass
+    print("Executing tarea2")
 
 proceso1 = multiprocessing.Process(target=tarea1)
 proceso2 = multiprocessing.Process(target=tarea2)
